@@ -1,6 +1,5 @@
 #include <iostream>
 #include <math.h>
-
 #include <string.h>
 
 
@@ -29,7 +28,7 @@ int main(){
     }
     letras = a-space;
 
-    if(letras <10){
+    if(letras <10 ){
         printf(word);
     printf(" Tiene ");
     printf("%d",letras);  
@@ -37,16 +36,15 @@ int main(){
     printf(" y es menor a 10 caracteres");
     }
 
-    if(letras >10){
+    if(letras >10|| letras ==10){
         printf(word);
     printf(" Tiene ");
     printf("%d",letras);  
     printf(" letras") ;
-    printf(" y es mayor a 10 caracteres");
+    printf(" y es mayor o igual a 10 caracteres");
     }
 
     poim = (letras%2 ==0)? " Es par" : " Es impar";
     cout<<" ademas "<<letras<<poim<<endl;
-
 
 }
